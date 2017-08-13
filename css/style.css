@@ -173,6 +173,7 @@ nav a:hover {
 .news {
 	width: 260px;
 	float: left;
+	margin: 0 25px;
 }
 
 .news h2 {
@@ -194,6 +195,7 @@ nav a:hover {
 .portfolio {
 	width: 650px;
 	float: right;
+	margin: 0 25px;
 }
 
 .portfolio h2 {
