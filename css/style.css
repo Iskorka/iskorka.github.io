@@ -1,0 +1,323 @@
+body {
+	margin: 0;
+}
+
+
+.container {
+	width: 1024px;
+	margin: auto;
+	border-top: 1px solid black;
+	overflow: hidden;
+	margin-top: -2px;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+/*
+***********
+* =banner
+***********
+*/
+
+.banner {
+	background: url(../img/banner1.jpg);
+	width: 1024px;
+	height: 580px;
+	margin: auto;
+	position: relative;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.banner h1 {
+	text-align: center;
+	font-family: 'Cormorant Infant', serif;
+	font-size: 100px;
+	font-weight: 100;
+	position: absolute;
+	top: 100px; left: 200px; bottom: 200px; right: 200px;
+	text-shadow: 1px 1px 1px grey;
+}
+
+
+.banner ul {
+	position: absolute;
+	bottom: -15px; left: 425px;
+}
+
+.banner li {
+	display: inline-block;
+	
+	width: 12px;
+    height: 12px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid white;
+	margin-right: 20px;
+}
+
+#selected {
+	background: black;
+}
+/*
+***********
+* =nav
+***********
+*/
+
+nav {
+	margin-left: -35px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: relative;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.menu-icon {
+	background: url(../img/mobile-menu.png) no-repeat;
+	position: absolute;
+	left: -9999px;
+	width: 0px;
+}
+
+nav li {
+	display: inline;
+}
+
+nav .left-nav {
+	margin-top: -20px;
+	margin-right: 0px;
+	width: 200px;
+	float: right;
+	position: relative;
+	padding-top: 20px;
+}
+
+#login {
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+
+nav h3 {
+	text-indent: -9999px;
+}
+
+nav h3:after {
+	clear: both;
+	display: block;
+	content: ' ';
+	visibility: hidden;
+	height: 1%;
+}
+
+nav h3 a {
+	background: url(../img/cart.png) no-repeat;
+	width: 48px;
+	height: 44px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	padding: 0;
+}
+
+nav h3 a:hover {
+	background-color: white;
+}
+
+nav a {
+	font-family: 'Cormorant Infant', serif;
+	font-size: 26px;
+	letter-spacing: 3px;
+	margin-right: 5px;
+	color: #0d0d0d;
+	padding: 15px 5px;
+}
+
+nav a:hover {
+	background-color: #e8e8e8;
+}
+
+/*
+***********
+* =main
+***********
+*/
+
+.main {
+	border-top: 1px solid black;
+	margin-top: 5px;
+	overflow: hidden;
+	border-bottom: 1px solid black;
+}
+
+.main h2 {
+	font-family: 'PT Mono', monospace;
+	font-weight: normal;
+	letter-spacing: -1px;
+	text-shadow: 1px 0px 0px grey;
+	border-bottom: 1px solid black;
+}
+
+.main p {
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.news {
+	width: 260px;
+	float: left;
+}
+
+.news h2 {
+	width: 190px;
+}
+
+.news h2 hr {
+	width: 160px;
+	margin-left: 0;
+	margin-bottom: 3px;
+	border-top: 1px solid; 
+}
+
+.news img {
+	margin-top: -15px;
+	max-width: 100%;
+}
+
+.portfolio {
+	width: 650px;
+	float: right;
+}
+
+.portfolio h2 {
+	width: 300px;
+    margin: 20px 175px 0;
+	text-align: center;
+	border: 0;
+}
+
+.portfolio ul {
+	padding-left: 0;
+	width: 650px;
+}
+
+.portfolio li {
+	margin-right: 21px;
+	display: inline;
+}
+
+.portfolio li:last-child {
+	margin-right: 0;
+}
+
+.portfolio hr {
+	border-top: 1px solid;
+	width: 180px;
+	padding: 0;
+	margin-top: 2px;
+}
+
+.portfolio h2 hr {
+	width: 220px;
+	margin-bottom: 0;
+}
+
+.portfolio img {
+	width: 200px;
+	max-width: 100%;
+}
+
+.portfolio p:before {
+	width: 240px;
+	border-top: 1px solid;
+}
+
+/*
+***********
+* =footer
+***********
+*/
+
+footer {
+	background: #e8e8e8;
+	overflow: hidden;
+	clear: both;
+	font-family: 'Cormorant Infant', serif;
+	font-size: 22px;
+	position: relative;
+	margin-top: 5px;
+	border-top: 1px solid;
+}
+
+footer p {
+	margin-left: 10px;
+	margin-right: 0;
+}
+
+.adress {
+	width: 200px;
+	float: right;
+	position: absolute;
+	top: 0px;
+	right: 35px;
+	line-height: 1px;
+}
+
+/*
+***********
+* =media queries
+***********
+*/
+
+
+@media only screen and (max-width: 768px) {
+	
+	nav {
+		height: 90px;
+	}
+	
+	nav ul {
+		visibility: hidden;
+	}
+	
+	nav .left-nav {
+		margin-top: -5px;
+		visibility: visible;
+		padding-top: 0;
+	}
+	
+	nav #login {
+		letter-spacing: -1px;
+		font-size: 50px;
+		padding: 40px 0;
+		top: -35px;
+		margin-right: 55px;
+	}
+	
+	nav h3 a{
+		left: -73px;
+	}
+	
+	
+	.menu-icon{
+		width: 78px;
+		height: 65px;
+		display: block;
+		left: 15px;
+		margin-top: 15px;
+	}
+	
+	header h3 {
+		text-indent: -9999px;
+	}
+	
+	.news {
+		width: 100%;
+	}
+}
