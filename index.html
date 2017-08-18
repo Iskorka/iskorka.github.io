@@ -7,19 +7,18 @@
 		<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Mono|Roboto+Slab" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-		
-
-
-
 		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+		<script src="js/script.js"></script>
 	</head>
 	
 	<body>
 		<div class="container">
 			<header>
-				<h3 class="menu-icon"><a href="#"></a>Меню</h3>
+				<h3 id="menu-icon"><a href="#"></a>Меню</h3>
 				<nav>
-					<ul>
+					<ul class="main-menu">
 						<li><a href="#">Прайслист</a></li>
 						<li><a href="#">Подбор букета</a></li>
 						<li><a href="#">Контакты</a></li>
@@ -28,6 +27,12 @@
 							<li><h3><a href="#" ></a>Корзина</h3></li>
 							<li><a href="#" id="login">Войти</a></li>
 						</div>
+					</ul>
+					<ul class="mob-menu hidden">
+						<li><a href="#">Прайслист</a></li>
+						<li><a href="#">Подбор букета</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Доставка</a></li>
 					</ul>
 				</nav>
 				<div class="banner">
