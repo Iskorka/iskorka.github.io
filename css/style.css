@@ -3,6 +3,9 @@ body {
 	margin-top: 7px;
 }
 
+.hidden {
+	display: none;
+}
 
 .container {
 	width: 1024px;
@@ -31,6 +34,7 @@ a {
 	position: relative;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+	z-index: -1;
 }
 
 .banner h1 {
@@ -79,11 +83,12 @@ nav {
 	border-top: 1px solid black;
 }
 
-.menu-icon {
+#menu-icon {
 	background: url(../img/mobile-menu.png) no-repeat;
 	position: absolute;
 	left: -9999px;
 	width: 0px;
+	z-index: 1;
 }
 
 nav li {
@@ -285,7 +290,7 @@ footer p {
 		height: 90px;
 	}
 	
-	nav ul {
+	nav .main-menu {
 		visibility: hidden;
 	}
 	
@@ -307,8 +312,20 @@ footer p {
 		left: -73px;
 	}
 	
+	nav .mob-menu {
+		width: 230px;
+		height: 245px;
+		margin-top: 60px;
+		z-index: 9999;
+		background: #fdfdfd;
+	}
 	
-	.menu-icon{
+	.mob-menu li {
+		font-size: 50px;
+		display: block;
+	}
+	
+	#menu-icon{
 		width: 78px;
 		height: 65px;
 		display: block;
