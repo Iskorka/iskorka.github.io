@@ -3,6 +3,10 @@ body {
 	margin-top: 7px;
 }
 
+.ui-loader h1 {
+	display: none;
+}
+
 img {
 	max-width: 100%;
 }
