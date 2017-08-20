@@ -399,7 +399,7 @@ footer p {
 */
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {	
 	
 	nav {
 		height: 90px;
@@ -427,20 +427,30 @@ footer p {
 		left: -73px;
 	}
 	
+	.mob-menu a:hover {
+		background: rgba(253, 253, 253, 0);
+	}
+	
 	nav .mob-menu {
-		width: 230px;
+		width: 260px;
 		height: 245px;
 		margin-top: 60px;
 		background: #fdfdfd;
+		box-shadow: 1px -2px 10px;
 	}
 	
 	.mob-menu a {
 		font-size: 30px;
+		background: rgba(253, 253, 253, 0);
 	}
 	
 	.mob-menu li {
 		font-size: 50px;
 		display: block;
+	}
+	
+	.mob-menu li:hover {
+		background: #e8e8e8;
 	}
 	
 	#menu-icon{
