@@ -434,6 +434,10 @@ footer p {
 		background: #fdfdfd;
 	}
 	
+	.mob-menu a {
+		font-size: 30px;
+	}
+	
 	.mob-menu li {
 		font-size: 50px;
 		display: block;
