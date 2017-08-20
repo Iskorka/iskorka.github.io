@@ -68,6 +68,8 @@ a {
 
 .bg-img2 {
 	background: url(../img/banner2.jpg);
+	position: absolute;
+	top: 0;
 }
 
 .bg-img2 .mask {
@@ -100,6 +102,8 @@ a {
 
 .bg-img3 {
 	background: url(../img/banner3.jpg);
+	position: absolute;
+	top: 0;
 }
 
 .bg-img3 .mask{
