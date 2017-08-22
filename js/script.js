@@ -99,4 +99,14 @@ $(document).ready(function(){
 		$('.banner li:nth-child(2)').removeClass('selected');
 		$('.banner li:last').addClass('selected');
 	});
+	
+	$('#login').click(function(){
+		$('.login-form').addClass('login-form-enabled').show();
+		$('#login-mask').show();
+	});
+	
+	$('#login-mask').click(function(){
+		$(this).hide();
+		$('.login-form').removeClass('login-form-enabled').hide();
+	});
 });
