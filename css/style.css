@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	margin-top: 7px;
+	/*width: 1024px*/
 }
 
 .ui-loader h1 {
@@ -32,7 +33,7 @@ img {
 }
 
 .container {
-	width: 1024px;
+	width: 1024px; /* 100% */
 	margin: auto;
 	border-top: 1px solid black;
 	overflow: hidden;
@@ -77,7 +78,7 @@ a {
 .login-form h5 {
 	font-size: 15px;
 	color: #7a7a7a;
-	margin: 2px 0 2px 36px;
+	margin: 2px 0 5px 36px;
 }
 
 .login-form #register {
@@ -102,7 +103,7 @@ a {
 	color: white;
 	font-size: 16px;
     margin-left: 120px;
-    margin-top: 10px;
+    margin-top: 5px;
     background: #898989;
 }
 
@@ -114,7 +115,7 @@ a {
 
 .banner {
 	
-	width: 1024px;
+	width: 100%;
 	height: 580px;
 	margin: auto;
 	position: relative;
@@ -133,7 +134,7 @@ a {
 
 .bg-img1 h1 {
 	text-align: center;
-	font-family: 'Cormorant Infant', serif;
+	font-family: 'Neucha', cursive;
 	font-size: 100px;
 	font-weight: 100;
 	position: absolute;
@@ -200,7 +201,10 @@ a {
 
 .banner ul {
 	position: absolute;
-	bottom: -15px; left: 425px;
+	left: 465px;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .banner li {
@@ -475,6 +479,52 @@ footer p {
 
 @media only screen and (max-width: 768px) {	
 	
+	.container {
+		width: 768px; /* поменять на 100% вверху и удалить здесь */
+	}
+	
+	.banner {
+		height: 800px;
+	}
+	
+	.bg-img1 {
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+	}
+	
+	.bg-img1 h1 {
+		width: 100%;
+		top: 124px; left: 0; right: 0;
+		font-size: 125px;
+		line-height: 185px;
+		
+	}
+	.bg-img2 {
+		-webkit-background-size: 200% 100%;
+		background-size: 200% 100%;
+	} 
+	.bg-img3 {
+		-webkit-background-size: 150% 100%;
+		background-size: 150% 100%;
+	}
+	
+	.forward, .backward {
+		display: none;
+	}
+	
+	.banner ul {
+		bottom: 20px;
+		left: 339px;
+	}
+	
+	.banner li {
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+	}
+	
 	nav {
 		height: 90px;
 	}
@@ -484,7 +534,7 @@ footer p {
 	}
 	
 	nav .left-nav {
-		margin-top: -5px;
+		margin-top: -34px;
 		visibility: visible;
 		padding-top: 0;
 	}
@@ -541,5 +591,43 @@ footer p {
 	
 	.news {
 		width: 100%;
+	}
+	
+	.login-form {
+		width: 630px;
+		height: 815px;
+		position: absolute;
+		left: 70px;
+	}
+	
+	.login-form h4 {
+		font-size: 50px;
+		width: 100px;
+		margin-top: 10px;
+	}
+	
+	.login-form h5 {
+		font-size: 26px;
+		margin-left: 70px;
+		margin-bottom: 0;
+	}
+	
+	.login-form input {
+		width: 570px;
+		height: 78px;
+		margin-left: 30px;
+		border-radius: 46px;
+	}
+	
+	.login-form #register {
+		width: 300px;
+	}
+	
+	.login-form .btn {
+		height: 40px;
+		width: 240px;
+		margin-left: 195px;
+		margin-top: 20px;
+		font-size: 26px;
 	}
 }
