@@ -20,6 +20,16 @@ img {
 	background: black;
 }
 
+.login-form-enabled {
+	width: 360px;
+	height: 470px;
+	background: url(../img/loginForm.jpg);
+	position: absolute;
+	top: 136px;
+	left: 332px;
+	z-index: 5;
+	box-shadow: 0px 0px 90px -10px rgb(0, 0, 0);
+}
 
 .container {
 	width: 1024px;
@@ -27,11 +37,73 @@ img {
 	border-top: 1px solid black;
 	overflow: hidden;
 	margin-top: -2px;
+	position: relative;
 }
-
 
 a {
 	text-decoration: none;
+}
+
+/*
+***********
+* =login form
+***********
+*/
+#login-mask {
+	background: rgba(230, 230, 230, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    display: block;
+	display: none;
+}
+
+.login-form {
+	display: none;
+}
+	
+.login-form h4, .login-form h5, .login-form .btn {
+	font-family: 'Cormorant Infant', serif;
+}
+	
+.login-form h4 {
+	font-size: 28px;
+	width: 54px;
+	margin: auto;
+	margin-bottom: 3px;
+}
+
+.login-form h5 {
+	font-size: 15px;
+	color: #7a7a7a;
+	margin: 2px 0 2px 36px;
+}
+
+.login-form #register {
+	width: 170px;
+	margin: 5px auto 10px;
+	color: black;
+}
+
+.login-form input {
+	height: 40px;
+	margin-left: 22px;
+    width: 316px;
+	-webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+	border: 1px solid #dddddd;
+}
+
+.login-form .btn {
+	width: 120px;
+    height: 26px;
+	color: white;
+	font-size: 16px;
+    margin-left: 120px;
+    margin-top: 10px;
+    background: #898989;
 }
 
 /*
@@ -74,6 +146,7 @@ a {
 	background: url(../img/banner2.jpg);
 	position: absolute;
 	top: 0;
+	display: none;
 }
 
 .bg-img2 .mask {
@@ -108,6 +181,7 @@ a {
 	background: url(../img/banner3.jpg);
 	position: absolute;
 	top: 0;
+	display: none;
 }
 
 .bg-img3 .mask{
