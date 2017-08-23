@@ -85,6 +85,7 @@ a {
 	width: 170px;
 	margin: 5px auto 10px;
 	color: black;
+	text-aligh: center;
 }
 
 .login-form input {
@@ -620,7 +621,7 @@ footer p {
 	}
 	
 	.login-form #register {
-		width: 300px;
+		width: 310px;
 	}
 	
 	.login-form .btn {
