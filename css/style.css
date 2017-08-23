@@ -52,11 +52,11 @@ a {
 */
 #login-mask {
 	background: rgba(230, 230, 230, 0.8);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 4;
-    display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 4;
+	display: block;
 	display: none;
 }
 
@@ -91,21 +91,21 @@ a {
 .login-form input {
 	height: 40px;
 	margin-left: 22px;
-    width: 316px;
+	width: 316px;
 	-webkit-border-radius: 28px;
-    -moz-border-radius: 28px;
-    border-radius: 28px;
+	-moz-border-radius: 28px;
+	border-radius: 28px;
 	border: 1px solid #dddddd;
 }
 
 .login-form .btn {
 	width: 120px;
-    height: 26px;
+	height: 26px;
 	color: white;
 	font-size: 16px;
-    margin-left: 120px;
-    margin-top: 5px;
-    background: #898989;
+	margin-left: 120px;
+	margin-top: 5px;
+	background: #898989;
 }
 
 /*
