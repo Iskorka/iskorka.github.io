@@ -7,6 +7,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Mono|Roboto+Slab" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
 		<link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -37,24 +38,43 @@
 					<input class="btn" type="button" value="Регистрация">
 				</form>
 			</div>
+			<div id="cart" class="hidden"><p>Пусто</p></div>
+			<div class="contacts hidden">
+				<ul>
+					<li><i class="fa fa-phone" aria-hidden="true"></i> 111-222-333</li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i> 333-222-111</li>
+					<li><a href="https://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i> @Flowers_Polina</a></li>
+					<li><i class="fa fa-home" aria-hidden="true"></i> ул. Ленпасовская, 49</li>
+				</ul>
+			</div>
+			<div class="assortment hidden">
+				<ul>
+					<li><a href="#">Авторские букеты</a></li>
+					<li><a href="#">Букеты роз</a></li>
+					<li><a href="#">Свадебные букеты</a></li>
+					<li><a href="#">Цветы в корзине</a></li>
+					<li><a href="#">Растения</a></li>
+					<li><a href="#">Букеты из фруктов</a></li>
+				</ul>
+			</div>
 			<div id="login-mask"></div>
 			<header>
 				<h3 id="menu-icon"><a href="#"></a>Меню</h3>
 				<nav>
 					<ul class="main-menu">
 						<li><a href="#">Прайслист</a></li>
-						<li><a href="#">Подбор букета</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li class="assortment-btn">Подбор букета<i class="fa fa-angle-down" aria-hidden="true"></i></li>
+						<li>Контакты<i class="fa fa-angle-down" aria-hidden="true"></i></li>
 						<li><a href="#">Доставка</a></li>
 						<div class="left-nav">
-							<li><h3><a href="#" ></a>Корзина</h3></li>
-							<li><a href="#" id="login">Войти</a></li>
+							<li><h3>Корзина</h3></li>
+							<li id="login">Войти</li>
 						</div>
 					</ul>
 					<ul class="mob-menu hidden">
 						<li><a href="#">Прайслист</a></li>
-						<li><a href="#">Подбор букета</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li class="assortment-btn">Подбор букета <i class="fa fa-angle-right" aria-hidden="true"></i></li>
+						<li>Контакты <i class="fa fa-angle-right" aria-hidden="true"></i></li>
 						<li><a href="#">Доставка</a></li>
 					</ul>
 				</nav>
