@@ -130,7 +130,7 @@ $(document).ready(function(){
 		$('.contacts').addClass('hidden');
 	});
 	
-	$('.banner, .main, footer').click(function(){
+	$('.banner, .main, footer, #login').click(function(){
 		$('.contacts').addClass('hidden');
 		$('.assortment').addClass('hidden');
 		$('#cart').addClass('hidden');
