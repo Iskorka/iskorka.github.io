@@ -2,6 +2,9 @@ $(document).ready(function(){
 	
 	$('#menu-icon').click(function(){
 		$('.mob-menu').toggleClass('hidden');
+		$('.contacts').addClass('hidden');
+		$('.assortment').addClass('hidden');
+		$('#cart').addClass('hidden');
 	});
 	
 	$('.bg-img2').hide();
