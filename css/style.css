@@ -1,7 +1,27 @@
+/*
+	z-index:
+		.hidden: 0;
+		.banner: 0;
+		nav: 1;
+		#menu-icon: 2;
+		#login-mask: 4;
+		.login-form-enabled: 5;
+		#cart: 5;
+		.contacts: 5;
+		.assortment: 5;
+*/
+
 body {
 	margin: 0;
 	margin-top: 7px;
 	/*width: 1024px*/
+}
+
+@font-face {
+    font-family: Pompadur;
+    src: url('../fonts/Pompadur.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .ui-loader h1 {
@@ -52,11 +72,11 @@ a {
 */
 #login-mask {
 	background: rgba(230, 230, 230, 0.8);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	z-index: 4;
-	display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    display: block;
 	display: none;
 }
 
@@ -91,21 +111,21 @@ a {
 .login-form input {
 	height: 40px;
 	margin-left: 22px;
-	width: 316px;
+    width: 316px;
 	-webkit-border-radius: 28px;
-	-moz-border-radius: 28px;
-	border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
 	border: 1px solid #dddddd;
 }
 
 .login-form .btn {
 	width: 120px;
-	height: 26px;
+    height: 26px;
 	color: white;
 	font-size: 16px;
-	margin-left: 120px;
-	margin-top: 5px;
-	background: #898989;
+    margin-left: 120px;
+    margin-top: 5px;
+    background: #898989;
 }
 
 /*
@@ -135,7 +155,7 @@ a {
 
 .bg-img1 h1 {
 	text-align: center;
-	font-family: 'Neucha', cursive;
+	font-family: Pompadur;
 	font-size: 100px;
 	font-weight: 100;
 	position: absolute;
@@ -202,7 +222,7 @@ a {
 
 .banner ul {
 	position: absolute;
-	left: 465px;
+	left: 477px;
 	bottom: 0;
 	margin: 0;
 	padding: 0;
@@ -287,6 +307,19 @@ nav {
 
 nav li {
 	display: inline;
+	font-family: 'Cormorant Infant', serif;
+	font-size: 26px;
+	letter-spacing: 3px;
+	margin-right: 5px;
+	color: #0d0d0d;
+	padding: 15px 5px;
+	cursor: pointer;
+}
+
+nav i {
+	position: relative;
+	top: 3px;
+	font-weight: bold !important;
 }
 
 nav .left-nav {
@@ -316,31 +349,104 @@ nav h3:after {
 	height: 1%;
 }
 
-nav h3 a {
+nav h3 {
 	background: url(../img/cart.png) no-repeat;
 	width: 48px;
 	height: 44px;
 	position: absolute;
-	top: 10px;
+	top: -17px;
 	left: 0;
 	padding: 0;
 }
 
-nav h3 a:hover {
+nav .left-nav li:first-child:hover {
 	background-color: white;
 }
 
 nav a {
-	font-family: 'Cormorant Infant', serif;
-	font-size: 26px;
-	letter-spacing: 3px;
-	margin-right: 5px;
 	color: #0d0d0d;
-	padding: 15px 5px;
+	
 }
 
-nav a:hover {
+nav li:hover {
 	background-color: #e8e8e8;
+}
+
+/*
+***********
+* =drop-down menus
+***********
+*/
+
+#cart, .contacts, .assortment {
+	box-shadow: 0px 12px 80px -4px black;
+}
+
+#cart {
+	width: 80px;
+	height: 40px;
+	background: white;
+	position: absolute;
+	top: 74px; right: 120px;
+	z-index: 5;
+}
+
+#cart p {
+	text-align: center;
+	margin: 0;
+	padding-top: 11px;
+	font-family: 'Cormorant Infant', serif;
+	font-size: 1.1em;
+	color: #969696;
+}
+
+.contacts {
+	position: absolute;
+	z-index: 5;
+	background: white;
+	top: 74px;
+	right: 345px;
+}
+
+.contacts ul {
+	padding: 0 15px;
+}
+
+.contacts li, .contacts a {
+	color: black;
+	list-style-type: none;
+	font-family: 'Jura', sans-serif;
+	font-weight: 100;
+	font-size: 22px;
+	letter-spacing: -1px;
+}
+
+.assortment {
+	background: white;
+	position: absolute;
+	z-index: 5;
+	top: 74px;
+	left: 175px;
+}
+
+.assortment ul {
+	padding: 0;
+}
+
+.assortment li {
+	list-style-type: none;
+	padding: 0 15px;
+}
+
+.assortment a {
+	color: black;
+	font-family: 'Cormorant Infant', serif;
+	font-size: 24px;
+	line-height: 38px;
+}
+
+.assortment li:hover {
+	background: #e8e8e8;
 }
 
 /*
@@ -548,7 +654,7 @@ footer p {
 		margin-right: 55px;
 	}
 	
-	nav h3 a{
+	nav h3{
 		left: -73px;
 	}
 	
@@ -557,21 +663,28 @@ footer p {
 	}
 	
 	nav .mob-menu {
-		width: 260px;
-		height: 245px;
+		width: 410px;
+		height: 470px;
 		margin-top: 60px;
 		background: #fdfdfd;
+		padding: 5px 0 25px 40px;
 		box-shadow: 1px -2px 10px;
 	}
 	
 	.mob-menu a {
-		font-size: 30px;
+		font-size: 50px;
 		background: rgba(253, 253, 253, 0);
 	}
 	
 	.mob-menu li {
 		font-size: 50px;
 		display: block;
+		line-height: 80px;
+		letter-spacing: -3px;
+	}
+	
+	.mob-menu li:first-child {
+		margin-top: 20px;
 	}
 	
 	.mob-menu li:hover {
@@ -630,5 +743,126 @@ footer p {
 		margin-left: 195px;
 		margin-top: 20px;
 		font-size: 26px;
+	}
+	
+	#cart {
+		width: 130px;
+		height: 65px;
+		top: 105px;
+		right: 145px;
+	}
+	
+	#cart p {
+		font-size: 36px;
+	}
+	
+	.contacts {
+		width: 360px;
+		height: 290px;
+		top: 340px;
+		left: 270px;
+	}
+	
+	.contacts ul {
+		padding: 0;
+		padding-left: 23px;
+		margin-top: 25px;
+	}
+	
+	.contacts li, .contacts a {
+		font-size: 28px;
+		letter-spacing: -1px;
+		line-height: 60px;
+	}
+	
+	.assortment {
+		width: 350px;
+		height: 440px;
+		top: 130px;
+		left: 375px;
+	}
+	
+	.assortment li {
+		padding: 0;
+		padding-left: 25px;
+	}
+	
+	.assortment a {
+		font-size: 37.55px;
+		line-height: 70px;
+		letter-spacing: -1px;
+	}
+	
+	.news h2 {
+		width: 402px;
+		margin: 30px auto;
+		height: 160px;
+		letter-spacing: -5px;
+		font-size: 54px;
+		text-align: center;
+	}
+	
+	.news h2 hr {
+		width: 315px;
+		margin: 27px 42.5px 3px;
+	}
+	
+	.news p {
+		font-size: 30px;
+		float: left;
+		width: 390px;
+	}
+	
+	.news img {
+		float: right;
+	}
+	
+	.portfolio {
+		margin: 0 58px;
+	}
+	
+	.portfolio h2 {
+		width: 600px;
+		margin: auto;
+		letter-spacing: -5px;
+		font-size: 50px;
+	}
+	
+	.portfolio hr {
+		width: 280px;
+		margin-top: 9px;
+	}
+	
+	.portfolio ul {
+		width: 700px;
+		margin-left: 10px;
+	}
+	
+	.portfolio li {
+		margin-right: 65px;
+	}
+	
+	.portfolio li:last-child {
+		display: none;
+	}
+	
+	.portfolio img {
+		width: 280px;
+	}
+	
+	.portfolio p {
+		font-size: 24px;
+		margin-left: 20px;
+		margin-left: -30px;
+		line-height: 30px;
+		letter-spacing: 2px;
+	}
+	
+	footer {
+		font-size: 30px;
+	}
+	
+	.adress {
+		width: 256px;
 	}
 }
