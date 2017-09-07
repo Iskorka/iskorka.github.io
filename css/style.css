@@ -577,6 +577,251 @@ footer p {
 	line-height: 1px;
 }
 
+#page-up {
+	width: 130px;
+	height: 30px;
+	background: white;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	position: absolute;
+	top: 18px;
+	left: 470px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/*
+***********
+* =wrap
+***********
+*/
+
+.wrap {
+	border-top: 1px solid black;
+}
+
+.flowers {
+	width: 640px;
+	float: left;
+}
+
+.flowers h1 {
+	width: 100%;
+	font-size: 38px;
+	margin-left: 40px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+
+.flowers div {
+	height: 500px;
+	width: 100%;
+	margin-left: 40px;
+	margin-top: 5px;
+	padding-top: 25px;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 2px dashed black;
+}
+
+.flowers .autors-flowers {
+	border-top: 1px solid black;
+	padding-top: 20px;
+	margin-top: -20px;
+}
+
+.flowers img {
+	width: 305px;
+	float: left;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.flowers .description {
+	width: 245px;
+	margin: 0;
+	padding: 0;
+	margin-right: 85px;
+	float: right;
+}
+
+.flowers ul {
+	margin: 0;
+	margin-top: 40px;
+	padding: 0;
+	position: absolute;
+	top: 200px;
+}
+
+.flowers li {
+	display: inline-block;
+	width: 180px;
+	height: 200px;
+	margin-right: 46px;
+	text-indent: -9999px;
+	background-image: url(../img/autors-flowers-item.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+li:last-child {
+	margin-right: 0;
+}
+
+.flowers li p {
+	position: absolute;
+	top: 195px;
+	text-indent: 0;
+	font-size: 14px;
+	text-align: center;
+	width: inherit;
+	cursor: pointer;
+}
+
+.flowers .rose-flowers li {
+	background-image: url(../img/rose-flowers-item.jpg);
+}
+
+.flowers .wedding-flowers {
+	margin-bottom: 100px;
+}
+
+.flowers .wedding-flowers li {
+	background-image: url(../img/wedding-flowers-item.jpg);
+}
+
+.sidebar {
+	float: right;
+	width: 304px;
+	padding-left: 10px;
+	border-left: 2px solid #dddddd;
+}
+
+.sidebar .search {
+	border-bottom: 1px solid black;
+	position: relative;
+}
+
+.sidebar .search input {
+	width: 95%;
+	padding: 8px;
+	margin: 20px;
+	padding-left: 0;
+	margin-left: 0;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border: 2px solid #dddddd;
+	background: #fff7f7;
+}
+
+.sidebar .search i {
+	position: absolute;
+    top: 20px;
+    background: #f77482;
+    right: 36px;
+    padding: 9px;
+	border-bottom: 1px solid #f77482;
+	cursor: pointer;
+}
+
+.sidebar .assortment {
+	display: block;
+    position: absolute;
+    left: 720px;
+    line-height: 40px;
+    width: 100%;
+    top: 155px;
+    box-shadow: none;
+	z-index: 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	
+}
+
+.sidebar .assortment a {
+    font-size: 18px;
+}
+
+.sidebar .sale {
+	position: relative;
+	top: 284px;
+}
+
+.sidebar .sale li {
+	background: url(../img/sale-item.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 180px;
+	height: 200px;
+	margin-bottom: 80px;
+	list-style: none;
+	text-indent: -9999px;
+	border-bottom: 1px solid black;
+}
+
+.sidebar .sale li p {
+	position: relative;
+    top: 188px;
+    font-size: 14px;
+    width: 220px;
+    margin: 0 auto;
+    text-indent: 0;
+    text-align: center;
+    margin-left: -19px;
+    /* margin-bottom: 5px; */
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dddddd;
+	cursor: pointer;
+}
+
+.sidebar .delivery {
+	background: url(../img/delivery.png);
+	background-size: 100% 100%;
+    height: 333px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 285px;
+}
+
+.sidebar .delivery a {
+	width: 180px;
+    height: 29px;
+    background: green;
+    opacity: 0;
+    position: absolute;
+    bottom: 13px;
+    left: 50px;
+	border-radius: 20px
+}
+
+.page-select {
+	position: absolute;
+	bottom: 120px;
+	left: 320px;
+    width: 105px;
+    height: 25px;    
+}
+
+.page-select ul{
+	padding: 0;
+}
+
+.page-select li {
+	display: inline-block;
+	margin-right: 10px;
+	border: 3px solid black;
+}
+
+.page-select a {
+	padding: 10px;
+    font-size: 20px;
+	color: black;
+}
+
 /*
 ***********
 * =media queries
